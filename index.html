@@ -13,22 +13,17 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <script type="text/javascript">
         function send() {
-            var link = 'mailto:waiyanphyoe.x@gmail.com?subject=Please contact to ' +
-                document.getElementById('phone').value +
-                '&body=' + document.getElementById('phone').value;
+            var link = 'mailto:hello@techbase.software?subject=Request for quotation.' + '&body=' + document.getElementById('message').value;
             window.location.href = link;
         }
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115629455-5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
         gtag('config', 'UA-115629455-5');
     </script>
 
@@ -65,10 +60,10 @@
                             <p class="hero-paragraph is-revealing">Let's have a chat</p>
                             <div class="hero-form field field-grouped is-revealing">
                                 <div class="control control-expanded">
-                                    <input id="phone" class="input" type="text" name="phone" required placeholder="Your best phone number&hellip;">
+                                    <input id="message" class="input" type="text" name="message" required placeholder="Your best message&hellip;">
                                 </div>
                                 <div class="control">
-                                    <a class="button button-primary button-block" onclick="send()">Notify Me</a>
+                                    <a class="button button-primary button-block" onclick="send()">Get Quote</a>
                                 </div>
                             </div>
                         </div>
